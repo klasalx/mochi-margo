@@ -37,6 +37,7 @@ typedef struct margo_forward_proc_args {
     hg_proc_cb_t  user_cb;
     struct {
         hg_id_t parent_rpc_id;
+        uint64_t parent_trace_id;
     } header;
 } * margo_forward_proc_args_t;
 
@@ -47,6 +48,7 @@ typedef struct margo_respond_proc_args {
     hg_proc_cb_t  user_cb;
     struct {
         hg_return_t hg_ret;
+        uint64_t parent_trace_id;
     } header;
 } * margo_respond_proc_args_t;
 
