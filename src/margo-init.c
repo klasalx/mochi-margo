@@ -66,7 +66,7 @@ int margo_set_environment(const char* optional_json_config)
     return (0);
 }
 
-int margo_init_monitor(struct margo_monitor** monitor)
+static int margo_init_monitor(struct margo_monitor** monitor)
 {
     const char* monitor_so = getenv("MARGO_MONITOR_LIBRARY");
     if(monitor_so) {
