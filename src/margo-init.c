@@ -83,8 +83,7 @@ int margo_init_monitor(struct margo_monitor** monitor)
             = dlsym(so_handle, "margo_monitor_init");
         if(!init_handle) {
             const char* dlsym_err = dlerror();
-            MARGO_ERROR(0, "Failed to find \"margo_monitor_init\" symbol in
-                        \"%s\": %s",
+            MARGO_ERROR(0, "Failed to find \"margo_monitor_init\" symbol in \"%s\": %s",
                         monitor_so, dlsym_err ? dlsym_err : "symbol not found");
             dlclose(so_handle);
             return (0);
