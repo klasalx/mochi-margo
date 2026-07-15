@@ -48,7 +48,6 @@ typedef struct margo_respond_proc_args {
     hg_proc_cb_t  user_cb;
     struct {
         hg_return_t hg_ret;
-        uint64_t parent_trace_id;
     } header;
 } * margo_respond_proc_args_t;
 
