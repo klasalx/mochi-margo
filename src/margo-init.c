@@ -98,7 +98,6 @@ static int margo_init_monitor(struct margo_monitor** monitor)
             return (0);
         }
 
-        (*monitor)->monitor_handle = so_handle;
         MARGO_TRACE(0, "Monitoring library \"%s\" initialized successfully",
                     monitor_so);
 
