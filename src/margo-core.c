@@ -2446,7 +2446,7 @@ void __margo_internal_pre_handler_hooks(
     struct margo_monitor_rpc_handler_args* monitoring_args)
 {
     hg_id_t parent_id = 0;
-    uint64_t parent_trace_id;
+    uint64_t parent_trace_id = 0;
     check_parent_id_in_input(handle, &parent_id, &parent_trace_id);
     monitoring_args->parent_rpc_id = parent_id;
     monitoring_args->parent_trace_id = parent_trace_id;

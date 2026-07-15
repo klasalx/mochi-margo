@@ -364,7 +364,7 @@ struct margo_monitor_rpc_handler_args {
     /* input */
     hg_handle_t handle;
     hg_id_t     parent_rpc_id;
-    uint64_t parent_trace_id;
+    uint64_t    parent_trace_id;
     /* output */
     ABT_pool    pool;
     hg_return_t ret;
